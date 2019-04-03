@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgba(0,0,0,0.6);
+}
+button,
+input[type="submit"] {
+  background: #1266ff;
+  border: none;
+  border-bottom: 3px solid #0052e8;
+  color: #fff;
+  display: inline-block;
+  padding: 8px;
+  vertical-align: bottom;
+  width: 50%;
+}
+
+button.credit,
+input[type="submit"].credit {
+  border-left: rgba(255,255,255,0.15);
+  border-radius: 0 3px 3px 0;
+}
+button:focus,
+input[type="submit"]:focus,
+button:hover,
+input[type="submit"]:hover {
+  background: #2a75ff;
+  outline: none;
+}
+button:active,
+input[type="submit"]:active,
+button.active,
+input[type="submit"].active {
+  margin-top: 2px;
+  border-bottom-width: 1px;
+}
+.container {
+  background: #f5f5f7;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  margin: 30px auto;
+  max-width: 300px;
+  overflow: hidden;
+}
+.buttons {
+  background: #f0f0f2;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  padding: 25px 30px;
+}
+.input {
+  margin: 30px;
+  position: relative;
+}
+
+.input .active {
+  transform: rotateY(0deg);
+}
+input {
+  background: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.3), 1px 1px 0 rgba(0,0,0,0.1);
+  margin: 0 0 10px;
+  padding: 6px 10px 10px;
+  width: 100%;
+}
+input.form-submit {
+  box-shadow: none;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+}
+input.cc-expires{
+  width: 50%;
+  padding: auto;
+}
+a{
+  color: green;
+}

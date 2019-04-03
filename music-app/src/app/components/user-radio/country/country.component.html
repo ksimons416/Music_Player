@@ -1,0 +1,105 @@
+<app-nav [navItems]="userNavs"></app-nav>
+<link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+<ul>
+  <div *ngIf = "subid === 2"><h2>To skip songs, subscribe today... only $9.99 a month</h2></div>
+  <a routerLink="/userradio" routerLinkActive="active"><h3>Go back to radios</h3></a>
+  <h2>Country Radio</h2>
+  <h2>Now playing</h2>
+  <div *ngFor = "let song of songs">
+      <div *ngIf = "song.song_id === currentSong">
+        {{ song.song_title }} <br>
+        {{ song.artist_name }} <br>
+        <div id="buttons">
+        </div>
+        <div>
+        <span>
+            <button *ngIf = "subid === 1" (click) = "previous()">
+              <div class="arrow-left"></div>
+              <div class="arrow-left"></div>
+            </button>
+          <audio autoplay controls preload="auto" (ended)="next()">
+            <source src="{{ song.song_link }}" type="audio/mp3">
+            Your browser dose not Support the audio Tag
+          </audio>
+          <button *ngIf = "subid === 1" (click) = "next()">
+            <div class="arrow-right"></div>
+            <div class="arrow-right"></div>
+          </button>
+          </span>
+        </div>
+      </div>
+    </div>
+</ul>
+
+<!--The bottom with the columns-->
+<div class="container-audio">
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+  <div class="colum1">
+    <div class="row"></div>
+  </div>
+</div>

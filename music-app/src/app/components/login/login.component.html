@@ -1,0 +1,41 @@
+<div class="form">
+    <ul class="tab-group">
+      <li class="tab"><a routerLink="/signup">Sign Up</a></li>
+      <li class="tab active"><a routerLink="/login">Log In</a></li>
+    </ul>
+
+    <div id="login">
+      <h1>Welcome Back!</h1>
+
+      <form #loginForm = "ngForm" (ngSubmit)="loginSubmit()">
+
+        <div class="field-wrap">
+          <label>
+            Email Address<span class="req">*</span>
+          </label>
+          <input type="email"
+                 required="required"
+                 name = "email"
+                 [(ngModel)] = "email" >
+        </div>
+
+        <div class="field-wrap">
+          <label>
+            Password<span class="req">*</span>
+          </label>
+          <input type="password"
+                 name="password"
+                 id="password"
+                 name = "ngModel"
+                 required
+                 [(ngModel)] = "password">
+        </div>
+        <!--<button class="button button-block" routerLink="/userradio">Log In</button>-->
+        <button class = "button button-block" type="submit" [disabled]="!loginForm.valid">Login</button>
+      </form>
+      <h3>Or listen to our free radio <a routerLink="/freeradio" routerLinkActive="active">here</a></h3>
+    </div>
+  </div>
+
+
+

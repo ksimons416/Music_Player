@@ -1,0 +1,22 @@
+<app-nav [hidden] = "submitted" [navItems] ="NonSubNav"></app-nav>
+<div [hidden] = "submitted">
+<div class="container">
+  <div>
+    <h3 align="center">If you subscribe today for just <h1 align="center">$9.99</h1> you get unlimited skips!</h3>
+    <h3 align="center">As well as access to more songs later on!</h3>
+  </div>
+  <div class="input">
+    <form (ngSubmit) = "onSubmit(cCardForm)" #cCardForm="ngForm" class="option" id="credit">
+      <input class="cc-number" maxlength="19" ngModel name="credit-number" pattern="\d*" placeholder="Card Number" type="tel" />
+      <input class="cc-expires" maxlength="2" ngModel name="credit-mexpires" pattern="\d*" placeholder="Month (digits)" type="tel" />
+      <input class="cc-expires" maxlength="4" ngModel name="credit-yexpires" pattern="\d*" placeholder="Year" type="tel" />
+      <input class="cc-cvc" maxlength="3" ngModel name="credit-cvc" pattern="\d*" placeholder="CVV" type="tel" />
+      <button type="submit"[disabled]="!cCardForm.valid">Pay Now</button>
+    </form>
+  </div>
+</div>
+</div>
+<div class = "container" [hidden] ="!submitted">
+    <h3 align = "center">Your payment went through</h3>
+    <h3 align = "center">Click <a (click) = "logout()">here</a> to activate your subscription</h3>
+</div>

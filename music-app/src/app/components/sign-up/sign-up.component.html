@@ -1,0 +1,97 @@
+<div class="form" [hidden] = "submitted">
+    <ul class="tab-group">
+      <li class="tab active"><a routerLink="/signup">Sign Up</a></li>
+      <li class="tab"><a routerLink="/login">Log In</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="signup">
+        <div class = "field-wrap">
+        <h1>Sign Up for Free</h1>
+
+        <form action="/" method="post" (ngSubmit) = "signUp(signupForm)" #signupForm="ngForm">
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" ngModel name="firstname" required autocomplete="off" />
+            </div>
+
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input ngModel name="lastname" type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input ngModel name="email" type="email"required autocomplete="off"/>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input ngModel name="password" type="password"required autocomplete="off"/>
+          </div>
+          <button type="submit" class="button button-block" [disabled] = "!signupForm.valid">Get Started</button>
+        </form>
+        <h3>Or listen to our free raido <a routerLink="/freeradio" routerLinkActive="active">here</a></h3>
+      </div>
+    </div>
+
+      <div id="login">
+        <h1>Welcome Back!</h1>
+        <form action="/" method="post">
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          <button class="button button-block">Log In</button>
+        </form>
+        <h2>Or listen to our free raido <a routerLink="/freeradio" routerLinkActive="active">here</a></h2>
+      </div>
+    </div><!-- tab-content -->
+  </div>
+
+  <div class="form" *ngIf="submitted">
+    <div class="tab-content">
+    <h3>Thanks for signing up. <br> click <a routerLink="/login">here</a> to log into your new account</h3>
+    </div>
+  </div>
+
+<!-- <h2>Or listen to our free raido <a routerLink="/freeradio" routerLinkActive="active">here</a></h2> -->
+
+  <!--<h1>Welcome to Gittunes!</h1>-->
+  <!--<form>-->
+    <!--<h3>Please enter in the following information for our services</h3>-->
+    <!--<div>-->
+      <!--<input type="text" name="firsname" placeholder="First Name" required/>-->
+    <!--</div>-->
+    <!--<div>-->
+      <!--<input type="text" name="lastname" placeholder="Last Name" required/>-->
+    <!--</div>-->
+    <!--<div>-->
+      <!--<input type="email" name="email" placeholder="E-mail" required/>-->
+    <!--</div>-->
+    <!--<div>-->
+      <!--<input type="password" name="password" placeholder="Password" required/>-->
+    <!--</div>-->
+    <!--<div>-->
+      <!--<button type="submit" routerLink="/userradio" routerLinkActive="active">Continue</button>-->
+    <!--</div>-->
+  <!--</form>-->

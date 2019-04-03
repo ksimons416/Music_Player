@@ -1,0 +1,17 @@
+<app-nav [hidden]="submitted" [navItems] ="userNavs"></app-nav>
+
+<div class = "container" [hidden]="submitted">
+<form>
+  <h3>Okay, but really...</h3>
+  <h3>Are you sure about this?</h3>
+  <h3>You will lose all the perks</h3>
+  <div>
+    <button type="submit" (click) = "unsubscribe()">I'm done here</button>
+  </div>
+</form>
+</div>
+
+ <div class = "container" [hidden] ="!submitted">
+    <h3 align = "center">You're now unsubscribed</h3>
+    <h3 align = "center">Click <a (click) = "logout()">here</a> to log back in</h3>
+</div>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.deadduck.Project2MUSICAPP.Project2MusicappApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.488 s - in com.deadduck.Project2MUSICAPP.Project2MusicappApplicationTests

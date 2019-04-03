@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  background: linear-gradient(103deg, #eb4242, #f8b22f, #fef527, #51ff30, #35e777, #11dedc, #117dde, #7f11de
+  , #de11c8, #de1111);
+  background-size: 2000% 2000%;
+  -webkit-animation: AnimationName 50s ease infinite;
+  -moz-animation: AnimationName 50s ease infinite;
+  animation: AnimationName 50s ease infinite;}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 31%
+  }
+  50% {
+    background-position: 100% 70%
+  }
+  100% {
+    background-position: 0% 31%
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 31%
+  }
+  50% {
+    background-position: 100% 70%
+  }
+  100% {
+    background-position: 0% 31%
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 31%
+  }
+  50% {
+    background-position: 100% 70%
+  }
+  100% {
+    background-position: 0% 31%
+  }
+}
+img{
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
