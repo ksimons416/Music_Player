@@ -19,6 +19,22 @@ export class RockComponent implements OnInit {
   currentSong: number;
   subid: number;
 
+  ngOnInit() {
+    if (this.authService.hasRoles(1)) {
+      this.userNavs = environment.UserNav;
+      this.subid = 1;
+    } else if (this.authService.hasRoles(2)) {
+      this.userNavs = environment.NonSubNav;
+      this.subid = 2;
+    }
+
+    this.currentSong = Song[0];
+    this.songsService.getRockSongs()
+    .subscribe(songs => {
+      this.songs = songs;
+    });
+  }
+
   next() {
       this.currentSong = this.songs[this.currentSong].song_id;
       if (this.currentSong > 3 ) {
@@ -30,20 +46,6 @@ export class RockComponent implements OnInit {
     if (this.currentSong < 1) {
       this.currentSong = 3;
     }
-}
-  ngOnInit() {
-    if (this.authService.hasRoles(1)) {
-      this.userNavs = environment.UserNav;
-      this.subid = 1;
-    } else if (this.authService.hasRoles(2)) {
-      this.userNavs = environment.NonSubNav;
-      this.subid = 2;
-    }
-    this.currentSong = 1;
-    this.songsService.getAllSongs()
-    .subscribe(songs => {
-      this.songs = songs;
-    });
   }
 
 }

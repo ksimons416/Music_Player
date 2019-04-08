@@ -20,7 +20,7 @@ public class UserService implements IUserService{
     @Autowired
     public UserService(UserRepository userRepository, UserDao theUserDao){
         this.userRepository = userRepository;
-        userDao = theUserDao;
+        this.userDao = theUserDao;
     }
 
     @Transactional(readOnly = true)

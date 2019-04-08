@@ -17,4 +17,7 @@ export class SongsService {
   getAllSongs(): Observable<Song[]> {
     return this.httpClient.get<Song[]>(`${this.apiUrl}` + `/login/freeradio`);
   }
+  getRockSongs(): Observable<Song[]> {
+    return this.httpClient.get<Song[]>(`${this.apiUrl}` + `/login/freeradio/rock`);
+  }
 }
