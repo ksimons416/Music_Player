@@ -2,43 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f07ab7f4-3c9f-46f9-a99d-3cc45d819d95" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music-app/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music-app/src/app/components/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music-app/src/app/components/user-radio/rock/rock.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music-app/src/app/components/user-radio/rock/rock.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music-app/src/app/services/songs.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music-app/src/app/services/songs.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/Data/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/Data/UserDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/controller/MusicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/IMusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/IMusicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/MusicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music-app/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music-app/src/app/services/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/Data/TransactionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/Data/TransactionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/Data/TransactionDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/Data/TransactionDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/Data/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/Data/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/Data/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/Data/UserDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/Project2MusicappApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/Project2MusicappApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/bean/Song.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/bean/Song.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/bean/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/bean/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/bean/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/bean/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/controller/MusicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/controller/MusicController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/controller/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/controller/TransactionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/dto/UserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/repository/MusicRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/repository/MusicRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/repository/TransactionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/repository/TransactionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/service/IMusicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/service/IMusicService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/service/ITransactionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/service/ITransactionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/service/IUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/service/MusicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/service/MusicService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/service/TransactionServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/service/TransactionServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/polyfills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/polyfills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/deadduck/Project2MUSICAPP/Project2MusicappApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/deadduck/Project2MUSICAPP/Project2MusicappApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/polyfills.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/polyfills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/styles.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,11 +38,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/Data/MusicDaoImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
+            <state relative-caret-position="356">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/Project2MusicappApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#268#269#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/TransactionServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#541#542#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,45 +105,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/IMusicService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/MusicService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/repository/MusicRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="7" column="70" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/repository/UserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="100">
               <caret line="5" column="68" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -382,7 +360,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554611971866" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554767850246" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -455,18 +433,17 @@
       <workItem from="1554165625723" duration="7194000" />
       <workItem from="1554299955643" duration="32021000" />
       <workItem from="1554733404572" duration="529000" />
-      <workItem from="1554736393864" duration="262000" />
+      <workItem from="1554736393864" duration="11070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208058000" />
+    <option name="totallyTimeSpent" value="218866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23825504" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23825504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -476,7 +453,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32808024" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.3427762" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.39093485" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -558,17 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1060">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/Project2MusicappApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -691,18 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/TransactionServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/ITransactionService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -767,16 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/IMusicService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -801,16 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="7" column="70" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -862,8 +796,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/Data/MusicDaoImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="356">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/Project2MusicappApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/service/TransactionServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

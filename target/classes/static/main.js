@@ -427,11 +427,11 @@ var LoginComponent = /** @class */ (function () {
         this.route = route;
     }
     LoginComponent.prototype.ngOnInit = function () {
-        this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+        this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/userradio';
     };
     LoginComponent.prototype.loginSubmit = function () {
         var _this = this;
-        this.authService.authenticate(this.email, this.password, function () { return _this.router.navigate(['/userradio']); }, function (err) {
+        this.authService.authenticate(this.email, this.password, function () { return _this.router.navigate([_this.returnUrl]); }, function (err) {
             console.log(err);
             console.log('not logged in');
         });
@@ -444,9 +444,7 @@ var LoginComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./login.component.html */ "./src/app/components/login/login.component.html"),
             styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/components/login/login.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
     ], LoginComponent);
     return LoginComponent;
 }());
@@ -1012,6 +1010,25 @@ var RockComponent = /** @class */ (function () {
         this.songsService = songsService;
         this.authService = authService;
     }
+    RockComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        console.log('test');
+        if (this.authService.hasRoles(1)) {
+            this.userNavs = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].UserNav;
+            this.subid = 1;
+        }
+        else if (this.authService.hasRoles(2)) {
+            this.userNavs = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].NonSubNav;
+            this.subid = 2;
+        }
+        // this.currentSong = 1;
+        this.songsService.getRockSongs()
+            .subscribe(function (songs) {
+            _this.songs = songs;
+            _this.currentSong = _this.songs[0].song_id;
+        });
+        // this.currentSong = this.songs[0].song_id;
+    };
     RockComponent.prototype.next = function () {
         this.currentSong = this.songs[this.currentSong].song_id;
         if (this.currentSong > 3) {
@@ -1023,22 +1040,6 @@ var RockComponent = /** @class */ (function () {
         if (this.currentSong < 1) {
             this.currentSong = 3;
         }
-    };
-    RockComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        if (this.authService.hasRoles(1)) {
-            this.userNavs = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].UserNav;
-            this.subid = 1;
-        }
-        else if (this.authService.hasRoles(2)) {
-            this.userNavs = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].NonSubNav;
-            this.subid = 2;
-        }
-        this.currentSong = 1;
-        this.songsService.getRockSongs()
-            .subscribe(function (songs) {
-            _this.songs = songs;
-        });
     };
     RockComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1556,7 +1557,8 @@ var AuthService = /** @class */ (function () {
             headers: {
                 'Content-Type': 'application/json'
             }
-        }).toPromise()
+        })
+            .toPromise()
             .then(function (resp) {
             localStorage.setItem('authToken', JSON.stringify(resp));
             success();
@@ -1772,7 +1774,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Kara\Desktop\Revature_training\Project2_MusicApp\Project2_MusicApp\Project2MUSICAPP\music-app\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Kara\Desktop\Project2MUSICAPP\music-app\src\main.ts */"./src/main.ts");
 
 
 /***/ })

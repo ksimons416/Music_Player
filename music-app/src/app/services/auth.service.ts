@@ -10,7 +10,9 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  static isLoggedIn(): boolean {
+
+
+static isLoggedIn(): boolean {
     return localStorage.getItem('authToken') != null;
   }
 
@@ -38,13 +40,14 @@ export class AuthService {
         headers: {
           'Content-Type': 'application/json'
         }
-      }).toPromise()
+      })
+      .toPromise()
       .then((resp) => {
-          localStorage.setItem('authToken', JSON.stringify(resp));
-          success();
-        },
-        (err) => {
-          fail(err);
-        });
+        localStorage.setItem('authToken', JSON.stringify(resp));
+        success();
+      },
+      (err) => {
+        fail(err);
+      });
   }
 }

@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Kara\Desktop\Revature_training\Project2_MusicApp\Project2_MusicApp\Project2MUSICAPP\music-app\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\Kara\Desktop\Project2MUSICAPP\music-app\src\styles.css */"./src/styles.css");
 
 
 /***/ })

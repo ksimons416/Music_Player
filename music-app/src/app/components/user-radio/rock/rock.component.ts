@@ -18,8 +18,11 @@ export class RockComponent implements OnInit {
   userNavs: Array<{title: string}>;
   currentSong: number;
   subid: number;
+  rockSongs: Array<Song[]>;
+  aRockSong: Object;
 
   ngOnInit() {
+    console.log('test');
     if (this.authService.hasRoles(1)) {
       this.userNavs = environment.UserNav;
       this.subid = 1;
@@ -28,22 +31,22 @@ export class RockComponent implements OnInit {
       this.subid = 2;
     }
 
-    this.currentSong = Song[0];
     this.songsService.getRockSongs()
     .subscribe(songs => {
       this.songs = songs;
+      this.currentSong = this.songs[0].song_id;
     });
   }
 
   next() {
       this.currentSong = this.songs[this.currentSong].song_id;
       if (this.currentSong > 3 ) {
-        this.currentSong = 1;
+        this.currentSong = this.songs[0].song_id;
       }
     }
   previous() {
     this.currentSong = this.songs[this.currentSong].song_id - 2;
-    if (this.currentSong < 1) {
+    if (this.currentSong < this.songs[0].song_id) {
       this.currentSong = 3;
     }
   }

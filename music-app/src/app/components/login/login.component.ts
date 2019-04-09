@@ -12,18 +12,16 @@ export class LoginComponent implements OnInit {
   password: string;
   returnUrl: string;
 
-  constructor(private authService: AuthService,
-              private router: Router,
-              private route: ActivatedRoute) {
+  constructor(private authService: AuthService, private router: Router, private route: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
-  }
+    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/userradio';
+}
 
   loginSubmit() {
     this.authService.authenticate(this.email, this.password,
-      () => this.router.navigate(['/userradio']),
+      () => this.router.navigate([this.returnUrl]),
       (err) => {
         console.log(err);
         console.log('not logged in');
