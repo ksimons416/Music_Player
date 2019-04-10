@@ -48,7 +48,7 @@ public class MusicController {
     @GetMapping("/freeradio/rock")
     @ResponseBody
     public List<Song> getByGenreId(){
-        System.out.println("getting by genre...");
+        System.out.println("getting rock songs...");
         return musicDao.getRockSongs();
     }
 }

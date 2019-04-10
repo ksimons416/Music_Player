@@ -17,9 +17,10 @@ export class RockComponent implements OnInit {
   user: User[];
   userNavs: Array<{title: string}>;
   currentSong: number;
+  lastSong: number;
   subid: number;
   rockSongs: Array<Song[]>;
-  aRockSong: Object;
+
 
   ngOnInit() {
     console.log('test');
@@ -35,20 +36,30 @@ export class RockComponent implements OnInit {
     .subscribe(songs => {
       this.songs = songs;
       this.currentSong = this.songs[0].song_id;
+      // this.songs = this.rockSongs[0];
     });
   }
 
-  next() {
-      this.currentSong = this.songs[this.currentSong].song_id;
-      if (this.currentSong > 3 ) {
-        this.currentSong = this.songs[0].song_id;
-      }
+  forNext() {
+    if (this.currentSong > this.songs.length) {
+      this.currentSong = this.songs[0].song_id;
     }
-  previous() {
-    this.currentSong = this.songs[this.currentSong].song_id - 2;
-    if (this.currentSong < this.songs[0].song_id) {
-      this.currentSong = 3;
-    }
+    this.currentSong++;
   }
+
+next() {
+  if (this.currentSong > this.songs.length) {
+    this.currentSong = this.songs[0].song_id;
+  }
+    this.currentSong = this.songs[this.currentSong].song_id;
+    console.log(this.currentSong);
+  }
+previous() {
+  if (this.currentSong < this.songs[0].song_id) {
+    this.currentSong = this.songs.length - 1;
+  }
+  this.currentSong = this.songs[this.currentSong].song_id - 2;
+  console.log(this.currentSong);
+}
 
 }

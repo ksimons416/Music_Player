@@ -981,7 +981,7 @@ module.exports = "* {\r\n  font-family: 'Allerta', arial, Tahoma;\r\n  box-sizin
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-nav [navItems]=\"userNavs\"></app-nav>\n<link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>\n<ul>\n    <div *ngIf = \"subid === 2\"><h2>To skip songs, subscribe today... only $9.99 a month</h2></div>\n  <a routerLink=\"/userradio\" routerLinkActive=\"active\"><h3>Go back to radios</h3></a>\n  <h2>Rock Radio</h2>\n  <h2>Now playing</h2>\n  <div *ngFor = \"let song of songs\">\n      <div *ngIf = \"song.song_id === currentSong\">\n        {{ song.song_title }} <br>\n        {{ song.artist_name }} <br>\n        <div id=\"buttons\">\n        </div>\n        <div>\n        <span>\n            <button *ngIf = \"subid === 1\" (click) = \"previous()\">\n              <div class=\"arrow-left\"></div>\n              <div class=\"arrow-left\"></div>\n            </button>\n          <audio autoplay controls preload=\"auto\" (ended)=\"next()\">\n            <source src=\"{{ song.song_link }}\" type=\"audio/mp3\">\n            Your browser dose not Support the audio Tag\n          </audio>\n          <button *ngIf = \"subid === 1\" (click) = \"next()\">\n            <div class=\"arrow-right\"></div>\n            <div class=\"arrow-right\"></div>\n          </button>\n          </span>\n        </div>\n      </div>\n    </div>\n</ul>\n\n<!--The bottom with the columns-->\n<div class=\"container-audio\">\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n</div>\n"
+module.exports = "<app-nav [navItems]=\"userNavs\"></app-nav>\n<link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>\n<ul>\n    <div *ngIf = \"subid === 2\"><h2>To skip songs, subscribe today... only $9.99 a month</h2></div>\n  <a routerLink=\"/userradio\" routerLinkActive=\"active\"><h3>Go back to radios</h3></a>\n  <h2>Rock Radio</h2>\n  <h2>Now playing</h2>\n  <div *ngFor = \"let song of songs\">\n      <div *ngIf = \"song.song_id === currentSong\">\n        {{ song.song_title }} <br>\n        {{ song.artist_name }} <br>\n        <div id=\"buttons\">\n        </div>\n        <div>\n        <span>\n            <button *ngIf = \"subid === 1\" (click) = \"previous()\">\n              <div class=\"arrow-left\"></div>\n              <div class=\"arrow-left\"></div>\n            </button>\n          <audio autoplay controls preload=\"auto\" (ended)=\"next()\">\n            <source src=\"{{ song.song_link }}\" type=\"audio/mp3\">\n            Your browser dose not Support the audio Tag\n          </audio>\n          <button *ngIf = \"subid === 1\" (click) = \"forNext()\">\n            <div class=\"arrow-right\"></div>\n            <div class=\"arrow-right\"></div>\n          </button>\n          </span>\n        </div>\n      </div>\n    </div>\n</ul>\n\n<!--The bottom with the columns-->\n<div class=\"container-audio\">\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n  <div class=\"colum1\">\n    <div class=\"row\"></div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1027,17 +1027,25 @@ var RockComponent = /** @class */ (function () {
             _this.currentSong = _this.songs[0].song_id;
         });
     };
-    RockComponent.prototype.next = function () {
-        this.currentSong = this.songs[this.currentSong].song_id;
-        if (this.currentSong > 3) {
+    RockComponent.prototype.forNext = function () {
+        if (this.currentSong > this.songs.length) {
             this.currentSong = this.songs[0].song_id;
         }
+        this.currentSong++;
+    };
+    RockComponent.prototype.next = function () {
+        if (this.currentSong > this.songs.length) {
+            this.currentSong = this.songs[0].song_id;
+        }
+        this.currentSong = this.songs[this.currentSong].song_id;
+        console.log(this.currentSong);
     };
     RockComponent.prototype.previous = function () {
-        this.currentSong = this.songs[this.currentSong].song_id - 2;
         if (this.currentSong < this.songs[0].song_id) {
-            this.currentSong = 3;
+            this.currentSong = this.songs.length - 1;
         }
+        this.currentSong = this.songs[this.currentSong].song_id - 2;
+        console.log(this.currentSong);
     };
     RockComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
