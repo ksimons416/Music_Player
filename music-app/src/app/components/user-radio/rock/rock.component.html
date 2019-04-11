@@ -13,11 +13,11 @@
         </div>
         <div>
         <span>
-            <button *ngIf = "subid === 1" (click) = "previous()">
+            <button *ngIf = "subid === 1" (click) = "forPrevious()">
               <div class="arrow-left"></div>
               <div class="arrow-left"></div>
             </button>
-          <audio autoplay controls preload="auto" (ended)="next()">
+          <audio autoplay controls preload="auto" (ended)="forNext()">
             <source src="{{ song.song_link }}" type="audio/mp3">
             Your browser dose not Support the audio Tag
           </audio>

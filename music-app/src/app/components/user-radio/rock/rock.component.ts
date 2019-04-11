@@ -35,31 +35,24 @@ export class RockComponent implements OnInit {
     this.songsService.getRockSongs()
     .subscribe(songs => {
       this.songs = songs;
+      // this.i = 0;
+      // this.currentSong = this.i;
       this.currentSong = this.songs[0].song_id;
-      // this.songs = this.rockSongs[0];
     });
   }
 
-  forNext() {
-    if (this.currentSong > this.songs.length) {
+forNext() {
+    if (this.currentSong === this.songs.length) {
       this.currentSong = this.songs[0].song_id;
     }
     this.currentSong++;
   }
 
-next() {
-  if (this.currentSong > this.songs.length) {
-    this.currentSong = this.songs[0].song_id;
+forPrevious() {
+    if (this.currentSong === this.songs[0].song_id) {
+      this.currentSong = this.songs.length;
+    }
+    this.currentSong--;
   }
-    this.currentSong = this.songs[this.currentSong].song_id;
-    console.log(this.currentSong);
-  }
-previous() {
-  if (this.currentSong < this.songs[0].song_id) {
-    this.currentSong = this.songs.length - 1;
-  }
-  this.currentSong = this.songs[this.currentSong].song_id - 2;
-  console.log(this.currentSong);
-}
 
 }

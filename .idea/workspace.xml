@@ -5,10 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music-app/src/app/components/user-radio/rock/rock.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/music-app/src/app/components/user-radio/rock/rock.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music-app/src/app/components/user-radio/rock/rock.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music-app/src/app/components/user-radio/rock/rock.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deadduck/Project2MUSICAPP/controller/MusicController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/controller/MusicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deadduck/Project2MUSICAPP/controller/MusicController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/main.js.map" afterDir="false" />
     </list>
@@ -81,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/music-app/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -233,8 +231,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="width" value="975" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -343,16 +341,15 @@
       <workItem from="1554299955643" duration="32021000" />
       <workItem from="1554733404572" duration="529000" />
       <workItem from="1554736393864" duration="11070000" />
-      <workItem from="1554819407023" duration="10308000" />
+      <workItem from="1554819407023" duration="15103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229174000" />
+    <option name="totallyTimeSpent" value="233969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24161074" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -751,7 +748,7 @@
     <entry file="file://$PROJECT_DIR$/music-app/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
