@@ -20,6 +20,7 @@ export class RockComponent implements OnInit {
   lastSong: number;
   subid: number;
   rockSongs: Array<Song[]>;
+  i: number;
 
 
   ngOnInit() {
@@ -35,24 +36,29 @@ export class RockComponent implements OnInit {
     this.songsService.getRockSongs()
     .subscribe(songs => {
       this.songs = songs;
-      // this.i = 0;
-      // this.currentSong = this.i;
       this.currentSong = this.songs[0].song_id;
     });
   }
 
 forNext() {
     if (this.currentSong === this.songs.length) {
-      this.currentSong = this.songs[0].song_id;
+      this.currentSong = this.songs[0].song_id - 1;
     }
     this.currentSong++;
+    console.log(this.currentSong);
   }
 
 forPrevious() {
     if (this.currentSong === this.songs[0].song_id) {
-      this.currentSong = this.songs.length;
+      this.currentSong = this.songs.length + 1;
     }
     this.currentSong--;
+    console.log(this.currentSong);
+  }
+  nextMethod(){
+    for(this.i = 0; this.i < this.songs.length; this.i++){
+
+    }
   }
 
 }

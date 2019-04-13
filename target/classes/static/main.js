@@ -1024,34 +1024,26 @@ var RockComponent = /** @class */ (function () {
         this.songsService.getRockSongs()
             .subscribe(function (songs) {
             _this.songs = songs;
-            // this.i = 0;
-            // this.currentSong = this.i;
             _this.currentSong = _this.songs[0].song_id;
         });
     };
     RockComponent.prototype.forNext = function () {
         if (this.currentSong === this.songs.length) {
-            this.currentSong = this.songs[0].song_id;
+            this.currentSong = this.songs[0].song_id - 1;
         }
         this.currentSong++;
+        console.log(this.currentSong);
     };
     RockComponent.prototype.forPrevious = function () {
         if (this.currentSong === this.songs[0].song_id) {
-            this.currentSong = this.songs.length;
+            this.currentSong = this.songs.length + 1;
         }
         this.currentSong--;
+        console.log(this.currentSong);
     };
-    RockComponent.prototype.next = function () {
-        if (this.currentSong > this.songs.length) {
-            this.currentSong = this.songs[0].song_id;
+    RockComponent.prototype.nextMethod = function () {
+        for (this.i = 0; this.i < this.songs.length; this.i++) {
         }
-        this.currentSong = this.songs[this.currentSong].song_id;
-    };
-    RockComponent.prototype.previous = function () {
-        if (this.currentSong < this.songs[0].song_id) {
-            this.currentSong = this.songs.length - 1;
-        }
-        this.currentSong = this.songs[this.currentSong].song_id - 2;
     };
     RockComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
